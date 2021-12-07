@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+
+
+:root{
+    --background-blue: rgb(26, 148, 255);
+    --background-yellow : rgb(253, 216, 53);
+    --background-while: rgb(255, 255, 255);
+    --background-red :  rgb(255, 66, 78);
+    --background-redopciti: rgb(255, 240, 241);
+    --while-color: #fff;
+    --grey-color : #fafafa;
+    --back-color : rgb(36, 36, 36);
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    cursor: default;
+}
+
+@keyframes Thunder{
+    0%{
+        transform: scale(0.6);
+      }
+      50%{
+        transform: scale(1);
+      }
+      100%{
+        transform: scale(0.6);
+      }
+}
+
+#main{
+    background-color: #efefef;
+}
+
+
+.flex-1{
+    flex: 1;
+}
+    /* node  */
+.modo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.53);
+    z-index: 99;
+    visibility: hidden;
+    transition: all  linear 0.3s;
+    opacity: 0;
+
+}
+
+.modo.click{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.mode-c1{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 98;
+}
+
+.mode-c1.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.fire-icon.hide{
+    display: none;
+}
+.deals-item-img-free.hide-img{
+    display: none;
+}
+
+
+.rectmodal_content{
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 800px;
+    height: 500px;
+    margin: 80px auto;
+    padding: 0;
+    border-radius: 20px;
+}
+
+
+
+.rectmodal_content-c1{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.rectmodal_content-button{
+    width: 100%;
+    text-align: right;
+    top: 0;
+    right: 0;
+    transform: translateX(2%);
+    position: absolute;
+}
+
+.btn-close{
+   width: 42px;
+   height: 42px;
+   border-radius: 50%;
+   border: none;
+   top: 0;
+   transform: translateY(-50%);
+   cursor: pointer;
+   background: var(--while-color);
+}
+
+/* node 1 */
+
+
+.rectmodal_content-button-c1{
+   width: 100%;
+   height: 500px;
+}
+
+.rectmodal_content-navbar{
+    padding: 40px 45px 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.rectmodal_content-navbar-header h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.rectmodal_content-navbar-header p {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.form-input{
+    width: 100%;
+    height: 100%;
+}
+
+.form-input input{
+    width: 100%;
+    border: none;
+    font-size: 2.4rem;
+    padding: 5px 0;
+    color: rgb(36, 36, 36);
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.form-button{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-button button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    background: var(--background-red);
+    color: var(--while-color);
+    margin: 30px 0px 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-button button:hover{
+    opacity: 0.8;
+}
+
+.with-email{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(13, 92, 182);
+    cursor: pointer;
+}
+
+.rectmodal_content-navbar-footer{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.navbar-before {
+    text-align: center;
+    color: rgb(120, 120, 120);
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-before::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgb(242, 242, 242);
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.navbar-before span{
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.rectmodal_content-navbar-list{
+    display: flex;
+    list-style: none;
+    margin: 16px 0;
+    justify-content: center;
+}
+
+
+.rectmodal_content-navbar-item{
+    width: 58px;
+    height: 58px;
+    margin: 12px 12px;
+}
+.rectmodal_content-navbar-item img {
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.note {
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(120, 120, 120);
+}
+
+.note a {
+    color: rgb(120, 120, 120);
+}
+
+    /* mode 2  */
+.rectmodal_content-button-c2{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(136deg, rgb(240, 248, 255) -1%, rgb(219, 238, 255) 85%);
+}
+
+.rectmodal_content-button-img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.rectmodal_content-button-img img {
+    width: 203px;
+    height: 203px;
+    margin-top: 30%;
+}
+
+.rectmodal_content-button-c3{
+    width: 100%;
+}
+
+.rectmodal_content-button-c3 h4 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(11, 116, 229);
+    letter-spacing: 1px;
+}
+
+.rectmodal_content-button-c3 span{
+    font-size: 1.3rem;
+    color: rgb(11, 116, 229);
+    font-weight: normal;
+}
+
+
+ /* thu vien slick  */
+.pull-right,
+.pull-left{
+   position: absolute;
+}
+
+.slick-prev{
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--back-color);
+    background-color: transparent;
+    border: none;
+    z-index: 9;
+    padding: 5px 1px;
+    cursor: pointer;
+}
+
+.slick-next{
+    top: 50%;
+    transform: translateY(-42%);
+    color: var(--back-color);
+    background-color: transparent;
+    border: none;
+    z-index: 9;
+    padding: 5px 1px;
+    right: 0;
+    text-align: right;
+    cursor: pointer;
+}
+
+.click-left{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 3rem;
+    width: 30px;
+    height: 50px;
+}
+
+.click-right{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 3rem;
+    width: 30px;
+    height: 50px;
+}
+
+.click-right:hover,
+.click-left:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--while-color);
+}
+
+ /* dots  */
+
+.slick-dots{
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: 38%;
+    display: flex !important;
+}
+
+.slick-dots li button{
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.slick-active button{
+    background-color: var(--while-color) !important;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
