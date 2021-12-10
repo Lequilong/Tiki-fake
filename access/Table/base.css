@@ -10,7 +10,10 @@
     --background-redopciti: rgb(255, 240, 241);
     --while-color: #fff;
     --grey-color : #fafafa;
+    --xam-color :rgb(120, 120, 120);
+    --blue-color :rgb(13, 92, 182);
     --back-color : rgb(36, 36, 36);
+    --greys-color:rgb(128, 128, 137);
 
 }
 
@@ -92,6 +95,9 @@ html{
     display: none;
 }
 
+.hide-prive{
+    display: none;
+}
 
 .rectmodal_content{
     position: relative;
@@ -352,6 +358,13 @@ html{
     color: var(--while-color);
 }
 
+.btn-left{
+   left: 10px;
+}
+.btn-right{
+    right: 10px;
+ }
+
  /* dots  */
 
 .slick-dots{
@@ -380,3 +393,94 @@ html{
     border-radius: 50%;
 }
 
+.slick-dots-content{
+    list-style: none;
+    position: absolute;
+    bottom: -20px;
+    left: 46%;
+    display: flex !important;
+}
+
+.slick-dots-content li button{
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+.slick-dots-content .slick-active button{
+    background-color: rgb(26, 148, 255) !important;
+}
+
+.lino-icon-right{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    background: var(--while-color);
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.lino-icon-right:hover {
+    opacity: 1;
+}
+
+.lino-icon-left{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    background: var(--while-color);
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.lino-icon-left:hover {
+    opacity: 1;
+}
+
+ion-icon{
+    color: var(--back-color);
+    font-size: 2.4rem;
+}
+
+.lino-icon-left ion-icon{
+    margin: -2px 0 0px -2px;
+}
+
+.lino-icon-right ion-icon{
+    margin: -2px 0 0px 3px;
+}
+
+/* start-icon  */
+.all-products-item-c1-body .hide-start{
+    display: none;
+}
+
+
+.all-products-item-c1-start-icon .start-icon-2{
+    color: var(--background-yellow);
+}
+
+ /* hide-discount */
+
+ .all-products-item-discount .color-discount{
+    color: var(--back-color);
+ }
+
+.all-products-item-discount .hide-discount{
+    display: none;
+}
+
+/* hide-freship */
+
+.all-products-item-c1-img .hide-freship{
+    display: none;
+}

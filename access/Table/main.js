@@ -41,14 +41,14 @@ $(document).ready(function(){
     $('.slider_container-item').slick({
         autoplay: true,
         dots:true,
-        autoplaySpeed : 10000,
+        autoplaySpeed : 5000,
         arrows: true,
         prevArrow:"<button type='button' class='slick-prev pull-left click-left'><i class='btn_prev ti-angle-left'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right click-right'><i class='btn_prev ti-angle-right'></i></button>"
     });
   });
 
-  $(document).ready(function(){
+$(document).ready(function(){
     $('.content-header-discount-body-list').slick({
         slidesToShow: 6,
         slidesToScroll: 6,
@@ -56,6 +56,43 @@ $(document).ready(function(){
         arrows: true,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='btn_prev ti-angle-left'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='btn_prev ti-angle-right'></i></button>"
+    });
+});
+
+
+$(document).ready(function(){
+    $('.content_container-MainBannersWrapper-c1').slick({
+        autoplay: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots:true,
+        dotsClass :'slick-dots-content',
+        autoplaySpeed : 5000,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left click-left btn-left'><i class='btn_prev ti-angle-left'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right click-right btn-right'><i class='btn_prev ti-angle-right'></i></button>"
+    });
+  });
+
+$(document).ready(function(){
+    $('.content_ccontainer-BrandCardsWrapper-c1').slick({
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        infinite: false,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left lino-icon-left'><ion-icon name='chevron-back-outline'></ion-icon></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right lino-icon-right'><ion-icon name='chevron-forward-outline'></ion-icon></button>"
+    });
+});
+
+$(document).ready(function(){
+    $('.content_container-top_trending-body-item').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: false,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left lino-icon-left'><ion-icon name='chevron-back-outline'></ion-icon></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right lino-icon-right'><ion-icon name='chevron-forward-outline'></ion-icon></button>"
     });
 });
 

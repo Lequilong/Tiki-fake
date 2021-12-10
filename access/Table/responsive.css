@@ -1,0 +1,14 @@
+/* mibile  */
+@media (max-width:  46.1875em){
+
+}
+
+/* table  */
+@media  (min-width : 46.25em) and ( max-width : 63.9375em) {
+
+}
+
+ /* Sữ dụng thuộc tính chung Mobile & Table */
+@media (max-width : 63.9375em){
+
+}
