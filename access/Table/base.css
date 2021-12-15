@@ -95,9 +95,18 @@ html{
     display: none;
 }
 
+.hide{
+    display: none;
+}
+
+.hide-header{
+    display: none;
+}
+
 .hide-prive{
     display: none;
 }
+
 
 .rectmodal_content{
     position: relative;
@@ -371,7 +380,9 @@ html{
     list-style: none;
     position: absolute;
     bottom: 10px;
-    left: 38%;
+    left: 50%;
+    top: 88%;
+    transform: translateX(-50%);
     display: flex !important;
 }
 
@@ -384,6 +395,7 @@ html{
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
+    
 }
 
 .slick-active button{
